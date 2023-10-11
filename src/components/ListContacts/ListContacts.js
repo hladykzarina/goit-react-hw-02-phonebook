@@ -1,3 +1,4 @@
+import React from 'react';
 import { Component } from 'react';
 import { ContactItem } from '../ItemContacts/ItemContacts';
 import { ContactListStyled } from './ListContacts.styled';

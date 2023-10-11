@@ -1,3 +1,4 @@
+import React from 'react';
 import { FilterInput, FilterSection } from './FilterForm.styled';
 
 const Filter = ({ value, onChange }) => {
