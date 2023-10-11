@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { Report } from 'notiflix';
 import Form from './Form/Form';
-import { Section } from './Section/Section';
+import Section from './Section/Section';
 import { ListContacts } from './ListContacts/ListContacts';
 import { Element } from './ListContacts/ListContacts.styled';
 import Filter from './FilterForm/FilterForm';
@@ -24,8 +24,10 @@ export class App extends Component {
       ({ name }) => data.name === name
     );
     if (identicalContactName) {
-      return (
-        Report.warning('WARNING'), `${data.name} is already in contacts`, 'ok'
+      return Report.warning(
+        'WARNING',
+        `${data.name} is already in contacts`,
+        'ok'
       );
     }
 
@@ -50,7 +52,7 @@ export class App extends Component {
 
   getVisibleContacts = () => {
     const { contacts, filter } = this.state;
-    const normalizedFilter = filter.toLowerCase;
+    const normalizedFilter = filter.toLowerCase();
 
     return contacts.filter(contact =>
       contact.name.toLowerCase().includes(normalizedFilter)
@@ -65,7 +67,7 @@ export class App extends Component {
       <Section>
         <h2>Phonebook</h2>
         <Form onSubmit={this.addContact} />
-        <Filter value={filter} />
+        <Filter value={filter} onChange={this.changeFilter} />
         {visibleContacts.length ? (
           <ListContacts
             contacts={visibleContacts}
