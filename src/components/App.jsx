@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { Report } from 'notiflix';
-import { Section } from './components/Section/Section.styled';
-import MyForm from './components/Form/Form';
+import { Section } from './Section/Section.styled';
+import MyForm from './Form/Form';
 import { ContactList } from './ContactList/ContactList';
 import { EmptyEl } from './ContactList/ContactList.styled';
-import Filter from './components/Filter/Filter';
+import Filter from './Filter/Filter';
 
 export class App extends Component {
   state = {

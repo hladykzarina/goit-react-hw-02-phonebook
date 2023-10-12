@@ -1,18 +1,19 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const FilterSection = styled.div`
-  width: 400px;
+  width: 380px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 `;
 
 export const FilterInput = styled.input`
-  width: 300px;
-  padding: 15px;
-  border-radius: 10px;
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
   border: 1px solid black;
-  background-color: transparent;
+  background-color: white;
   font-size: medium;
 `;

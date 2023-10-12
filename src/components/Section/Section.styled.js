@@ -1,14 +1,14 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 500px;
+  width: 520px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin: 50px auto 0 auto;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: lightgray;
+  flex-direction: column;
+  padding: 12px;
+  margin: 20px auto 0 auto;
+  border: 2px solid darkorange;
+  border-radius: 6px;
+  background-color: honeydew;
 `;
