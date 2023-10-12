@@ -1,12 +1,11 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { Report } from 'notiflix';
-import Form from './Form/Form';
-import Section from './Section/Section';
-import { ListContacts } from './ListContacts/ListContacts';
-import { Element } from './ListContacts/ListContacts.styled';
-import Filter from './FilterForm/FilterForm';
+import { Section } from './components/Section/Section.styled';
+import MyForm from './components/Form/Form';
+import { ContactList } from './ContactList/ContactList';
+import { EmptyEl } from './ContactList/ContactList.styled';
+import Filter from './components/Filter/Filter';
 
 export class App extends Component {
   state = {
@@ -66,15 +65,15 @@ export class App extends Component {
     return (
       <Section>
         <h2>Phonebook</h2>
-        <Form onSubmit={this.addContact} />
+        <MyForm onSubmit={this.addContact} />
         <Filter value={filter} onChange={this.changeFilter} />
         {visibleContacts.length ? (
-          <ListContacts
+          <ContactList
             contacts={visibleContacts}
             onDeleteContact={this.deleteContact}
           />
         ) : (
-          <Element>Not found</Element>
+          <EmptyEl>Not found</EmptyEl>
         )}
       </Section>
     );

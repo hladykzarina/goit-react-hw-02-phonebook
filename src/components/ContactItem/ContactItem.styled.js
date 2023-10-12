@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
-export const ContactItemElement = styled.li`
+export const ContactItemEl = styled.li`
   width: 400px;
   display: flex;
   align-items: flex-start;
@@ -10,7 +10,7 @@ export const ContactItemElement = styled.li`
   }
 `;
 
-export const DataContact = styled.p`
+export const ContactData = styled.p`
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ export const ContactDelete = styled.button`
   padding: 15px;
 `;
 
-export const ImgContact = styled.svg`
+export const ContactImg = styled.svg`
   width: 17px;
   height: 17px;
 `;

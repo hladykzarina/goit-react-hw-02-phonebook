@@ -21,7 +21,7 @@ const formSchema = Yup.object().shape({
     .required('This field is required, please fill that'),
 });
 
-const Form = ({ onSubmit }) => {
+const MyForm = ({ onSubmit }) => {
   return (
     <Formik
       initialValues={{
@@ -54,8 +54,8 @@ const Form = ({ onSubmit }) => {
   );
 };
 
-export default Form;
+export default MyForm;
 
-Form.propTypes = {
+MyForm.propTypes = {
   onSubmit: PropTypes.func,
 };

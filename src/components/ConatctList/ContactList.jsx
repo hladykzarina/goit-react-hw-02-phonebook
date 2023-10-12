@@ -1,9 +1,8 @@
-import React from 'react';
-import { Component } from 'react';
-import { ContactItem } from '../ItemContacts/ItemContacts';
-import { ContactListStyled } from './ListContacts.styled';
+import React, { Component } from 'react';
+import { ContactItem } from '../ContactItem/ContactItem';
+import { ContactListStyled } from './ContactList.styled';
 
-export class ListContacts extends Component {
+export class ContactList extends Component {
   render() {
     const { contacts, onDeleteContact } = this.props;
     return (

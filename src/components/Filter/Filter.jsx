@@ -1,5 +1,5 @@
+import { FilterInput, FilterSection } from './Filter.styled';
 import React from 'react';
-import { FilterInput, FilterSection } from './FilterForm.styled';
 
 const Filter = ({ value, onChange }) => {
   return (
@@ -7,7 +7,7 @@ const Filter = ({ value, onChange }) => {
       <h2>Contacts</h2>
       <field>
         <FilterInput
-          placeholder="find contact"
+          placeholder="Find contact"
           type="text"
           name="filter"
           value={value}

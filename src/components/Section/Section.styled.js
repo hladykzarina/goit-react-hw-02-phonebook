@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 export const Section = styled.section`
   width: 500px;
@@ -10,5 +10,5 @@ export const Section = styled.section`
   margin: 50px auto 0 auto;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: lightorange;
+  background-color: lightgray;
 `;
